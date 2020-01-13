@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/images"
+    android:background="@drawable/splash"
     tools:context=".activities.LogInScreenActivity">
-
-
 
 
     <ImageView
@@ -55,8 +53,8 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/bgmobile"
             android:hint="@string/enteryourmobileno"
-            android:padding="@dimen/_10sdp"
             android:inputType="phone"
+            android:padding="@dimen/_10sdp"
             android:textColor="@color/colorwhite"
             android:textColorHint="@color/colorwhite"
             android:textSize="@dimen/_14sdp" />
@@ -74,15 +72,14 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/_8sdp"
-            >
+            app:cardCornerRadius="@dimen/_8sdp">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorwhite"
-                android:text="login"
                 android:onClick="login"
+                android:text="login"
                 android:textColor="@color/colorblack" />
 
         </androidx.cardview.widget.CardView>

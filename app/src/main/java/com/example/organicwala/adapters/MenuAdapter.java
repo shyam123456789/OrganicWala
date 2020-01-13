@@ -15,12 +15,16 @@ import androidx.appcompat.widget.AppCompatTextView;
 public class MenuAdapter extends BaseAdapter {
     Context context;
     LayoutInflater inflater;
-    String titles[] = {"Home", "About Us", "Profile", "My Order", "My Favourites",  "Notification", "Contact Us"};
+    String titles[] = {"Home", "About Us", "Profile", "My Order", "My Favourites", "Delivery Address", "Share", "Privacy Policy", "Terms and Conditions", "Notification", "Contact Us"};
     int icons[] = {R.drawable.ic_home,
             R.drawable.ic_info,
             R.drawable.ic_account,
             R.drawable.ic_shopping_cart,
             R.drawable.ic_favorite,
+            R.drawable.ic_location,
+            R.drawable.ic_share,
+            R.drawable.ic_policy,
+            R.drawable.ic_terms_and_conditions,
             R.drawable.ic_notification,
             R.drawable.ic_call};
 
@@ -31,7 +35,7 @@ public class MenuAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 7;
+        return 11;
     }
 
     @Override

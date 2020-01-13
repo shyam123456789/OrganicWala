@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.organicwala.abstractactivity.MyAbstractActivity;
 import com.example.organicwala.activities.MainActivity;
@@ -24,10 +25,13 @@ import com.example.organicwala.adapters.MenuAdapter;
 import com.example.organicwala.fragments.AboutUsFragment;
 import com.example.organicwala.fragments.AccountFragment;
 import com.example.organicwala.fragments.ContactUsFragment;
+import com.example.organicwala.fragments.DeliveryAddressFragment;
 import com.example.organicwala.fragments.FavouritesFragment;
 import com.example.organicwala.fragments.HomeFragment;
 import com.example.organicwala.fragments.MyOrderFragment;
 import com.example.organicwala.fragments.NotificationFragment;
+import com.example.organicwala.fragments.PrivacyPolicyFragment;
+import com.example.organicwala.fragments.Terms_conditionsFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -46,7 +50,7 @@ public class HomeActivity extends MyAbstractActivity {
     @BindView(R.id.nav_view)
     NavigationView nav_view;
     private ActionBarDrawerToggle mAppBarConfiguration;
-    String titles[] = {"Home", "About Us", "Profile", "My Order", "My Favourites", "Notification", "Contact Us"};
+    String titles[] = {"Home", "About Us", "Profile", "My Order", "My Favourites", "Delivery Address", "Share", "Privacy Policy", "Terms and Conditions", "Notification", "Contact Us"};
     private AppUpdateManager mAppUpdateManager;
     private String TAG = "HomeActivity";
     private int RC_APP_UPDATE = 869;
@@ -172,10 +176,25 @@ public class HomeActivity extends MyAbstractActivity {
                 case 4:
                     showFragment(new FavouritesFragment());
                     break;
+
                 case 5:
-                    showFragment(new NotificationFragment());
+                    showFragment(new DeliveryAddressFragment());
                     break;
                 case 6:
+                    Toast.makeText(this, "share clicked", Toast.LENGTH_SHORT).show();
+                    break;
+                case 7:
+                    showFragment(new PrivacyPolicyFragment());
+                    break;
+                case 8:
+                    showFragment(new Terms_conditionsFragment());
+                    break;
+
+
+                case 9:
+                    showFragment(new NotificationFragment());
+                    break;
+                case 10:
                     showFragment(new ContactUsFragment());
                     break;
             }

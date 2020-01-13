@@ -685,6 +685,6 @@ public final class R {
         private layout() {}
 
         public static final int dp_example = 0x7f0b0030;
-        public static final int sdp_example = 0x7f0b004f;
+        public static final int sdp_example = 0x7f0b0052;
     }
 }
