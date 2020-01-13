@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".fragments.ContactUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_contactus" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_21sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:src="@drawable/logo"
+            android:tint="@color/colorwhite" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text="You can contact us \n   at below options"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/_19sdp" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@color/colorwhite" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_call"
+                android:gravity="center"
+                android:text="+9157934753"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/_12sdp"
+                app:drawableTint="@color/colorwhite" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_call"
+                android:gravity="center"
+                android:text="+9157934753"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/_12sdp"
+                app:drawableTint="@color/colorwhite" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_email"
+                android:gravity="center"
+                android:text="info@jeeurja.com"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/_12sdp"
+                app:drawableTint="@color/colorwhite" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_web"
+                android:gravity="center"
+                android:text="http://jeeurja.com/"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/_12sdp"
+                app:drawableTint="@color/colorwhite" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
